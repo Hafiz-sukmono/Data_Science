@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-01 09:54:59 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDk6MzA6NDggQU07Mjg4OA=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDk6NTQ6NTkgQU07MTszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan1, bilangan2, bilangan3" type="Integer" array="False" size=""/>
+            <input variable="bilangan1"/>
+            <input variable="bilangan2"/>
+            <input variable="bilangan3"/>
+            <if expression="bilangan1&gt;bilangan2">
+                <then>
+                    <output expression="&quot;bilangan terbesar&quot;" newline="True"/>
+                    <output expression="bilangan1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bilangan2&gt;bilangan3">
+                        <then>
+                            <output expression="&quot;bilangan terbesar&quot;" newline="True"/>
+                            <output expression="bilangan2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;bilangan terbesar&quot;" newline="True"/>
+                            <output expression="bilangan3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
