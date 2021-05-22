@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-07 08:07:57 PM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDc7MDk6NTk6MjUgQU07MjkwMA=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDc7MDg6MDc6NTcgUE07NjszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaiUTS" type="Real" array="False" size=""/>
+            <declare name="nilaiUAS" type="Real" array="False" size=""/>
+            <declare name="nilaiTUGAS" type="Real" array="False" size=""/>
+            <declare name="NILAIAKHIR" type="Real" array="False" size=""/>
+            <output expression="&quot;masukkan nilai UTS&quot;" newline="True"/>
+            <input variable="nilaiUTS"/>
+            <output expression="&quot;masukkan nilai UAS&quot;" newline="True"/>
+            <input variable="nilaiUAS"/>
+            <output expression="&quot;masukkan nilai TUGAS&quot;" newline="True"/>
+            <input variable="NilaiTUGAS"/>
+            <output expression="&quot;NILAI AKHIR&quot;" newline="True"/>
+            <assign variable="nilaiAKHIR" expression="(0.25*nilaiUTS)+(0.35*nilaiUAS)+(0.4*nilaiTUGAS)"/>
+            <if expression="NILAIAKHIR&gt;80 and NILAIAKHIR&lt;100">
+                <then>
+                    <output expression="&quot;indeks NIlai&quot;" newline="True"/>
+                    <output expression="&quot;boleh juga otak lu&quot;" newline="True"/>
+                    <output expression="&quot;A&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="NILAIAKHIR&gt;68 and NILAIAKHIR&lt;80">
+                <then>
+                    <output expression="&quot;indeks NILAI&quot;" newline="True"/>
+                    <output expression="&quot;lumaya lah otak lu&quot;" newline="True"/>
+                    <output expression="&quot;B&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="NilaiAKHIR&gt;56 and NILAIAKHIR&lt;67">
+                <then>
+                    <output expression="&quot;indeks NILAI&quot;" newline="True"/>
+                    <output expression="&quot;otak lu kaya standart motor&quot;" newline="True"/>
+                    <output expression="&quot;C&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="NILAIAKHIR&gt;44 and NILAIAKHIR&lt;55">
+                <then>
+                    <output expression="&quot;indeks NILAI&quot;" newline="True"/>
+                    <output expression="&quot;otak lu miring&quot;" newline="True"/>
+                    <output expression="&quot;D&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="NILAIAKHIR&gt;0 and NILAIAKHIR&lt;43">
+                <then>
+                    <output expression="&quot;indeks NILAI&quot;" newline="True"/>
+                    <output expression="&quot;fix otak lu di dengkul&quot;" newline="True"/>
+                    <output expression="&quot;E&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
