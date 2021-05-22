@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 08:56:49 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMjk7MDg6Mzk6MDIgQU07Mjg5Ng=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMjk7MDg6NTY6NDkgQU07MTszMDE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="jumlah" type="Integer" array="False" size=""/>
+            <assign variable="jumlah" expression="0"/>
+            <for variable="x" start="100" end="5" direction="dec" step="5">
+                <output expression="x" newline="True"/>
+                <assign variable="jumlah" expression="jumlah + x"/>
+            </for>
+            <output expression="&quot;jumlah = &quot;" newline="False"/>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
