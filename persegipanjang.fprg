@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-01 08:59:31 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDg6MzQ6MTggQU07Mjg4OA=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDg6NTk6MzEgQU07MTsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="panjang" type="Real" array="False" size=""/>
+            <declare name="lebar" type="Real" array="False" size=""/>
+            <declare name="luas" type="Real" array="False" size=""/>
+            <declare name="keliling" type="Real" array="False" size=""/>
+            <output expression="&quot;masukkan panjang&quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;masukkan lebar&quot;" newline="True"/>
+            <input variable="lebar"/>
+            <assign variable="luas" expression="panjang * lebar"/>
+            <assign variable="keliling" expression="panjang + lebar + panjang + lebar"/>
+            <output expression="&quot;luas = &quot;" newline="True"/>
+            <output expression="luas" newline="True"/>
+            <output expression="&quot;keliling =&quot;" newline="True"/>
+            <output expression="keliling" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
