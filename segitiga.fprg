@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-01 09:30:43 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDk6MDA6MzUgQU07Mjg4MQ=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDk6MzA6NDMgQU07MjsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tinggi" type="Real" array="False" size=""/>
+            <declare name="alas" type="Real" array="False" size=""/>
+            <declare name="sisimiring" type="Real" array="False" size=""/>
+            <declare name="luas" type="Real" array="False" size=""/>
+            <declare name="keliling" type="Real" array="False" size=""/>
+            <output expression="&quot;masukkan tinggi&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <output expression="&quot;masukkan alas&quot;" newline="True"/>
+            <input variable="alas"/>
+            <output expression="&quot;masukan sisimiring&quot;" newline="True"/>
+            <assign variable="sisimiring" expression="sqrt(alas*alas + tinggi*tinggi)"/>
+            <output expression="sisimiring" newline="True"/>
+            <output expression="&quot;luas&quot;" newline="True"/>
+            <assign variable="luas" expression="1/2 * tinggi * alas"/>
+            <output expression="luas" newline="True"/>
+            <output expression="&quot;keliling&quot;" newline="True"/>
+            <assign variable="keliling" expression="alas + tinggi + sisimiring"/>
+            <output expression="keliling" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
