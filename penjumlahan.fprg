@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 11:20:35 PM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDg6MDE6NDMgQU07Mjg4MA=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMTU7MTE6MjA6MzUgUE07MzszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan1" type="Integer" array="False" size=""/>
+            <declare name="bilangan2" type="Integer" array="False" size=""/>
+            <declare name="jumlah" type="Integer" array="False" size=""/>
+            <output expression="&quot;menghitung jumlah 2 buah bialangan&quot;" newline="True"/>
+            <output expression="&quot;bilangan 1&quot;" newline="True"/>
+            <input variable="bilangan1"/>
+            <output expression="&quot;bilangan 2&quot;" newline="True"/>
+            <input variable="bilangan2"/>
+            <assign variable="jumlah" expression="bilangan1 + bilangan2"/>
+            <output expression="&quot;jumlah&quot;" newline="True"/>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
