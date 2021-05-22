@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 10:07:19 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMjI7MDk6MzA6MjIgQU07Mjg4Mw=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMjI7MTA6MDc6MTkgQU07MzsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomorpeserta" type="Integer" array="False" size=""/>
+            <declare name="namapeserta" type="Real" array="False" size=""/>
+            <declare name="nilaitest" type="Real" array="False" size=""/>
+            <declare name="nilaipsikotest" type="Real" array="False" size=""/>
+            <declare name="nilaiwawancara" type="Real" array="False" size=""/>
+            <declare name="nilaiakhir" type="Real" array="False" size=""/>
+            <output expression="&quot;nomor peserta&quot;" newline="True"/>
+            <input variable="nomorpeserta"/>
+            <output expression="&quot;nama peserta&quot;" newline="True"/>
+            <input variable="namapeserta"/>
+            <output expression="&quot;nilai test&quot;" newline="True"/>
+            <input variable="nilaitest"/>
+            <output expression="&quot;nilai psikotest&quot;" newline="True"/>
+            <input variable="nilaipsikotest"/>
+            <output expression="&quot;nilai wawancara&quot;" newline="True"/>
+            <input variable="nilaiwawancara"/>
+            <assign variable="nilaiakhir" expression="(0.4 * nilaitest) + (0.3 * nilaipsikotest) + (0.3 * nilaiwawancara)"/>
+            <output expression="&quot;nilai akhir&quot;" newline="True"/>
+            <output expression="nilaiakhir" newline="True"/>
+            <if expression="nilaiakhir&gt;=60">
+                <then>
+                    <output expression="&quot;tidak diterima&quot;" newline="True"/>
+                    <output expression="tidakditerima" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;diterima&quot;" newline="True"/>
+                    <output expression="diterima" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
