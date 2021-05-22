@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 03:00:57 PM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMTU7MTA6NTE6MjMgUE07Mjg5Ng=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMTY7MDM6MDA6NTcgUE07MjszMDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jumlahdetik" type="Integer" array="False" size=""/>
+            <declare name="jam" type="Integer" array="False" size=""/>
+            <declare name="sisa" type="Integer" array="False" size=""/>
+            <declare name="menit" type="Integer" array="False" size=""/>
+            <declare name="detik" type="Integer" array="False" size=""/>
+            <output expression="&quot;jumlah detik&quot;" newline="True"/>
+            <input variable="jumlahdetik"/>
+            <assign variable="jam" expression="jumlahdetik / 3600"/>
+            <assign variable="sisa" expression="jumlahdetik - 3600"/>
+            <assign variable="menit" expression="sisa / 60"/>
+            <assign variable="detik" expression="menit / 60"/>
+            <output expression="&quot;jam&quot;" newline="True"/>
+            <output expression="jam" newline="True"/>
+            <output expression="&quot;menit&quot;" newline="True"/>
+            <output expression="menit" newline="True"/>
+            <output expression="&quot;detik&quot;" newline="True"/>
+            <output expression="detik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
