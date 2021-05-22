@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-08 08:32:58 AM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDg7MDg6MDI6MTggQU07Mjg5MA=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDg7MDg6MzI6NTggQU07MTszMDA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="golongan" type="String" array="False" size=""/>
+            <declare name="jabatan" type="String" array="False" size=""/>
+            <output expression="&quot;golongan&quot;" newline="True"/>
+            <input variable="golongan"/>
+            <if expression="golongan=&quot;A&quot;">
+                <then>
+                    <output expression="&quot;jabatan&quot;" newline="True"/>
+                    <output expression="&quot;generalmanager&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="golongan=&quot;B&quot;">
+                        <then>
+                            <output expression="&quot;jabatan&quot;" newline="True"/>
+                            <output expression="&quot;manager&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="golongan=&quot;C&quot;">
+                                <then>
+                                    <output expression="&quot;jabatan&quot;" newline="True"/>
+                                    <output expression="&quot;supervisior&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="golongan=&quot;D&quot;">
+                                        <then>
+                                            <output expression="&quot;jabatan&quot;" newline="True"/>
+                                            <output expression="&quot;staff&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;tidak ada&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
