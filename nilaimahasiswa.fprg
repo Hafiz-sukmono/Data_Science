@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hafiz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-01 04:19:53 PM"/>
+        <attribute name="created" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDQ6MTI6MzggUE07Mjg5Nw=="/>
+        <attribute name="edited" value="aGFmaXo7TEFQVE9QLU5UQ0c1UUJSOzIwMTktMTAtMDE7MDQ6MTk6NTMgUE07MTszMDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="" type="Integer" array="False" size=""/>
+            <declare name="" type="Integer" array="False" size=""/>
+            <declare name="" type="Integer" array="False" size=""/>
+            <input variable="nilaiUTS"/>
+            <input variable="nilaiUAS"/>
+            <input variable="nilaitugas"/>
+            <if expression="&quot;nilai tes &gt; 60 or rata-rata nilai &gt; 8&quot;">
+                <then>
+                    <output expression="&quot;tidak diterima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;diterima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
